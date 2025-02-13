@@ -1,0 +1,103 @@
+body {
+  font-family: "Noto Sans Mono", serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  background: #333;
+  position: fixed;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-name {
+  color: #fff;
+  margin: 5px 5px 5px 5px;
+}
+
+.hero-profile {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-name h1,
+.hero-profile p {
+  margin: 0;
+}
+
+header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  margin-top: 100px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid wheat;
+  transition: 0.5s;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  border: 2px solid wheat;
+}
+
+main {
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.link {
+  font-size: 50px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #007bff;
+}
+
+.album img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-blend-mode: multiply, multiply;
+  margin-top: 100px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  transition: 0.5s;
+}
+
+.album img:hover {
+  transform: scale(1.5);
+  border: 2px solid wheat;
+}
